@@ -3,7 +3,7 @@ Contributors: boltonstudios, freemius
 Donate link: https://ko-fi.com/boltonstudios
 Tags: read more, show more, toggle text, ellipsis
 Requires at least: 4.0.0
-Tested up to: 6.7.1
+Tested up to: 6.9.4
 Requires PHP: 5.4
 Stable tag: 1.1.6
 License: GPLv2 or later
