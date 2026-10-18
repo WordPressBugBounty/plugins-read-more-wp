@@ -16,7 +16,7 @@
  * Plugin Name:       Read More WP
  * Plugin URI:        https://wordpress.org/plugins/read-more-wp/
  * Description:       Create excerpts and hide text with an elegant toggle button to show more.
- * Version:           1.1.6
+ * Version:           1.1.7
  * Author:            Aaron Bolton
  * Author URI:        https://www.boltonstudios.com/read-more-wp/
  * License:           GPL-2.0+
@@ -38,7 +38,7 @@ if ( function_exists( 'rmwp_fs' ) ) {
      * Start at version 1.0.0 and use SemVer - https://semver.org
      * Rename this for your plugin and update it as you release new versions.
      */
-    define( 'READ_MORE_WP_VERSION', '1.1.6' );
+    define( 'READ_MORE_WP_VERSION', '1.1.7' );
     define( 'READ_MORE_WP_BASENAME', plugin_basename( __FILE__ ) );
     /**
      * The code that runs during plugin activation.
@@ -73,16 +73,16 @@ if ( function_exists( 'rmwp_fs' ) ) {
                 // Include Freemius SDK.
                 require_once dirname( __FILE__ ) . '/freemius/start.php';
                 $rmwp_fs = fs_dynamic_init( array(
-                    'id'             => '12677',
-                    'slug'           => 'read-more-wp',
-                    'premium_slug'   => 'read-more-wp-plus',
-                    'type'           => 'plugin',
-                    'public_key'     => 'pk_42b15e73d8e69906aae9a2d9ecfd9',
-                    'is_premium'     => false,
-                    'premium_suffix' => 'Plus',
-                    'has_addons'     => false,
-                    'has_paid_plans' => true,
-                    'menu'           => array(
+                    'id'               => '12677',
+                    'slug'             => 'read-more-wp',
+                    'premium_slug'     => 'read-more-wp-plus',
+                    'type'             => 'plugin',
+                    'public_key'       => 'pk_42b15e73d8e69906aae9a2d9ecfd9',
+                    'is_premium'       => false,
+                    'premium_suffix'   => 'Plus',
+                    'has_addons'       => false,
+                    'has_paid_plans'   => true,
+                    'menu'             => array(
                         'slug'    => 'read-more-wp',
                         'contact' => false,
                         'support' => false,
@@ -90,7 +90,8 @@ if ( function_exists( 'rmwp_fs' ) ) {
                             'slug' => 'options-general.php',
                         ),
                     ),
-                    'is_live'        => true,
+                    'is_live'          => true,
+                    'is_org_compliant' => true,
                 ) );
             }
             return $rmwp_fs;
